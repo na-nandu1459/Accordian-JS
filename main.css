@@ -1,0 +1,69 @@
+@import url("https://fonts.googlepis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: rgba(133, 92, 133, 0.404);
+}
+
+.accordian {
+  width: 100%;
+}
+
+.accordian .contentBox {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.accordian .contentBox .label {
+  position: relative;
+  padding: 10px;
+  background-color: #e466e9;
+  color: #fff;
+  cursor: pointer;
+  font: bold;
+}
+
+.accordian .contentBox .label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.accordian .contentBox .content {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  height: 0;
+  visibility: hidden;
+}
+
+.accordian .contentBox.active .label::before {
+  content: '-';
+}
+
+.accordian .contentBox.active .content {
+  height: auto;
+  padding: 10px;
+  visibility: visible;
+}
+/*# sourceMappingURL=main.css.map */
