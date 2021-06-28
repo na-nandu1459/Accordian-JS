@@ -18,7 +18,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background-color: rgba(133, 92, 133, 0.404);
+  background-color: rgba(105, 222, 226, 0.26);
 }
 
 .accordian {
@@ -33,7 +33,7 @@ body {
 .accordian .contentBox .label {
   position: relative;
   padding: 10px;
-  background-color: #e466e9;
+  background-color: #1febfa;
   color: #fff;
   cursor: pointer;
   font: bold;
